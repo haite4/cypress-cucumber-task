@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  cypress-run:
+  cypress_run:
     runs-on: windows-latest
     strategy:
       matrix:
