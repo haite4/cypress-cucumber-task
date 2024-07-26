@@ -78,7 +78,6 @@ This repository includes 16 automated tests written using the Cypress framework,
         npm run test:checkout:run
         ```
 ## Steps to Launch the Report
-    ```
 1. Serve the html report:
     ```sh
     npm run cypress:report
