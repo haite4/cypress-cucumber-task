@@ -51,7 +51,7 @@ jobs:
       if: always()
       with:
         name: cucumber-report
-      path: ./reports/cucumber-htmlreport
+        path: ./reports/cucumber-htmlreport
 
     - name: Deploy to Page
       if: always()
