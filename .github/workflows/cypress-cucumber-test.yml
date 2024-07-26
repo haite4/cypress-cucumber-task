@@ -2,7 +2,7 @@ name: Cypress Cucumber Test
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   cypress-run:
