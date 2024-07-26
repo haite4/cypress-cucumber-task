@@ -28,9 +28,9 @@ When("the user clicks the Continue button", () => {
 });
 
 When("the user fills out the checkout form with empty values", () => {
-  checkoutPage.firstNameInput.clear();
-  checkoutPage.lastNameInput.clear();
-  checkoutPage.zipPostalCodeInput.clear();
+  checkoutPage.clearFirstNameField();
+  checkoutPage.clearLastNameField();
+  checkoutPage.clearZipPostalCodeField();
 });
 
 Then("the ckeckout page should display the following elements:", (table) => {

@@ -5,7 +5,7 @@ import loginPage from "../../pages/loginPage";
 Given("the user is on the inventory page of the Saucedemo website", () => {
   cy.visit("/");
   loginPage.login("standard_user", "secret_sauce");
-  cy.url("include", "/inventory.html");
+  cy.url().should("include", "/inventory.html");
 });
 
 When("user view the list of products", () => {

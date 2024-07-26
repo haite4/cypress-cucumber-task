@@ -1,10 +1,13 @@
-{"scripts": {
-  "test:open": "cypress open --config-file configs/cypress.config.js",
-  "test:run": "cypress run --config-file configs/cypress.config.js"
-},
+{
+  "scripts": {
+    "test:open": "cypress open --config-file configs/cypress.config.js",
+    "test:run": "cypress run --config-file configs/cypress.config.js",
+    "cypress:report": "node cucumber-html-report.js"
+  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
-    "cypress": "^13.13.1"
+    "cypress": "^13.13.1",
+    "multiple-cucumber-html-reporter": "^3.7.0"
   }
 }

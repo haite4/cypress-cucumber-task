@@ -36,6 +36,18 @@ class checkoutPage {
   clickContinueButton() {
     this.continueButton.click();
   }
+
+  clearFirstNameField() {
+    this.firstNameInput.clear();
+  }
+
+  clearLastNameField() {
+    this.lastNameInput.clear();
+  }
+
+  clearZipPostalCodeField() {
+    this.zipPostalCodeInput.clear();
+  }
 }
 
 module.exports = new checkoutPage();
