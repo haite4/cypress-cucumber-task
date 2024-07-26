@@ -1,8 +1,16 @@
 {
   "scripts": {
-    "test:open": "cypress open --config-file configs/cypress.config.js",
-    "test:run": "cypress run --config-file configs/cypress.config.js",
-    "cypress:report": "node cucumber-html-report.js"
+    "cypress:open": "cypress open --config-file configs/cypress.config.js",
+    "cypress:run": "cypress run --config-file configs/cypress.config.js",
+    "cypress:report": "node cucumber-html-report.js",
+    "test:chrome": "cypress run --browser chrome --config-file configs/cypress.config.js",
+    "test:firefox": "cypress run --browser firefox --config-file configs/cypress.config.js",
+    "test:edge": "cypress run --browser edge --config-file configs/cypress.config.js",
+    "test:mobile": "cypress run --config-file configs/cypress.config.mobile.js",
+    "test:login:run": "cypress run --spec cypress/e2e/feature/login.feature --config-file configs/cypress.config.js",
+    "test:inventory:run": "cypress run --spec cypress/e2e/feature/inventory.feature --config-file configs/cypress.config.js", 
+    "test:checkout:run": "cypress run --spec cypress/e2e/feature/checkout.feature --config-file configs/cypress.config.js",
+    "test:cart:run": "cypress run --spec cypress/e2e/feature/cart.feature --config-file configs/cypress.config.js"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
