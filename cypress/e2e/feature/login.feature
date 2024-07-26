@@ -1,6 +1,5 @@
 Feature: Login Page
 
-
     Background:
         Given the user is on the login page of the Saucedemo website
 

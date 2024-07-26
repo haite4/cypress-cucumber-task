@@ -3,7 +3,6 @@ Feature: Checkout Page
     Background:
         Given the user is on the checkout page of the Saucedemo website
 
-
     Scenario: Verify visibility of elements on the checkout page
         Then the ckeckout page should display the following elements:
             | element               |
