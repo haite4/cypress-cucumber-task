@@ -8,8 +8,8 @@ jobs:
   cypress-run:
     runs-on: windows-latest
     strategy:
-      matrix:
-        node-version: [20.15.1]
+        matrix:
+          node-version: [20.15.1]
 
     steps:
       - name: Checkout
