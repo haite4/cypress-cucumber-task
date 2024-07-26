@@ -13,10 +13,23 @@ When(
   }
 );
 
+When(
+  "a user provides incorrect credentials, and click on the login button",
+  (table) => {
+    table.hashes().forEach((row) => {
+      loginPage.login(row.username, row.password);
+    });
+  }
+);
+
 Then(
   "the user should be redirected to the inventory page and see {string} title on the page",
   (title) => {
-    cy.url().should("include", "/inventory.html")
-    inventoryPage.titleOnPage.should('contain', title)
+    cy.url().should("include", "/inventory.html");
+    inventoryPage.titleOnPage.should("contain", title);
   }
 );
+
+Then("the error message {string} is displayed", (errorMessage) => {
+  loginPage.errorMessage.should("have.text", errorMessage);
+});

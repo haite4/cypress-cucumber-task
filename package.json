@@ -1,4 +1,7 @@
-{
+{"scripts": {
+  "test:open": "cypress open --config-file configs/cypress.config.js",
+  "test:run": "cypress run --config-file configs/cypress.config.js"
+},
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
