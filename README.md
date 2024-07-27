@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository includes 16 automated tests written using the Cypress framework, Cucumber, and JavaScript. These tests validate the functionality of key elements on the [Sauce Demo](https://www.saucedemo.com/) website, including the login, inventory, cart, and checkout pages.
+This repository includes 17 automated tests written using the Cypress framework, Cucumber, and JavaScript. These tests validate the functionality of key elements on the [Sauce Demo](https://www.saucedemo.com/) website, including the login, inventory, cart, and checkout pages.
 
 ## Requirements
 
