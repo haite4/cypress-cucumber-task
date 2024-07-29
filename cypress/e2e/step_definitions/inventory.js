@@ -1,11 +1,12 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import inventoryPage from "../../pages/inventoryPage";
 import loginPage from "../../pages/loginPage";
+import endpoints from "../../fixtures/endpoints.json";
 
 Given("the user is on the inventory page of the Saucedemo website", () => {
   cy.visit("/");
   loginPage.login("standard_user", "secret_sauce");
-  cy.url().should("include", "/inventory.html");
+  cy.url().should("include", endpoints.inventory);
 });
 
 When("user view the list of products", () => {
@@ -115,5 +116,6 @@ Then("products should be sorted from {string} name", (sortOrder) => {
           const sortedNames = [...names].sort((a, b) => b.localeCompare(a));
           expect(names).to.deep.equal(sortedNames);
         });
+      break;
   }
 });

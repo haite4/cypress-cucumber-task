@@ -3,6 +3,7 @@ import loginPage from "../../pages/loginPage";
 import inventoryPage from "../../pages/inventoryPage";
 import cartPage from "../../pages/cartPage";
 import checkoutPage from "../../pages/checkoutPage";
+import endpoints from "../../fixtures/endpoints.json";
 
 Given("the user is on the checkout page of the Saucedemo website", () => {
   cy.visit("/");
@@ -59,7 +60,7 @@ Then("the ckeckout page should display the following elements:", (table) => {
 });
 
 Then("the checkout page should display the order review page", () => {
-  cy.url().should("include", "/checkout-step-two.html");
+  cy.url().should("include", endpoints.checkout_step_two);
 });
 
 Then(

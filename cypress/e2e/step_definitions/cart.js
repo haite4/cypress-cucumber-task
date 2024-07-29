@@ -1,6 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import cartPage from "../../pages/cartPage";
 import inventoryPage from "../../pages/inventoryPage";
+import endpoints from "../../fixtures/endpoints.json";
 
 Given("the user adds a product to the cart", () => {
   inventoryPage.clickAddToCartButton();
@@ -8,7 +9,7 @@ Given("the user adds a product to the cart", () => {
 
 When("the user navigate to the cart page", () => {
   inventoryPage.clickShoppingCartLink();
-  cy.url().should("include", "/cart.html");
+  cy.url().should("include", endpoints.cart);
 });
 
 When("the user clicks the {string} button for the product", (buttonLabel) => {

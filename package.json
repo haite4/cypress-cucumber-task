@@ -8,7 +8,7 @@
     "test:edge": "cypress run --browser edge --config-file configs/cypress.config.js",
     "test:mobile": "cypress run --config-file configs/cypress.config.mobile.js",
     "test:login:run": "cypress run --spec cypress/e2e/feature/login.feature --config-file configs/cypress.config.js",
-    "test:inventory:run": "cypress run --spec cypress/e2e/feature/inventory.feature --config-file configs/cypress.config.js", 
+    "test:inventory:run": "cypress run --spec cypress/e2e/feature/inventory.feature --config-file configs/cypress.config.js",
     "test:checkout:run": "cypress run --spec cypress/e2e/feature/checkout.feature --config-file configs/cypress.config.js",
     "test:cart:run": "cypress run --spec cypress/e2e/feature/cart.feature --config-file configs/cypress.config.js"
   },
@@ -17,5 +17,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
     "cypress": "^13.13.1",
     "multiple-cucumber-html-reporter": "^3.7.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
   }
 }
